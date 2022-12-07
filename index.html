@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+    <title>Home Work</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div class="bodyContainer">
+      <div class="header bg-light">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Shopping Cart</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="items">
+        <div class="row justify-content-center">
+          <div class="card" style="width: 18rem; margin: 20px; padding: 5px">
+            <img
+              class="card-img-top"
+              src="https://images.pexels.com/photos/7472115/pexels-photo-7472115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text"><b>Bananas</b></p>
+              <p class="card-text">5.90₪/kg</p>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="addBananas"
+                onclick="addBananas()"
+              >
+                Add To Cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="removeBananas"
+                onclick="removeBananas()"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin: 20px; padding: 5px">
+            <img
+              class="card-img-top"
+              src="https://images.pexels.com/photos/4187483/pexels-photo-4187483.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text"><b>Apples</b></p>
+              <p class="card-text">8.90₪/kg</p>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="addApples"
+                onclick="addApples()"
+              >
+                Add To Cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="removeApples"
+                onclick="removeApples()"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin: 20px; padding: 5px">
+            <img
+              class="card-img-top"
+              src="https://images.pexels.com/photos/54369/pexels-photo-54369.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <p class="card-text"><b>Oranges</b></p>
+              <p class="card-text">4.90₪/kg</p>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="addOranges"
+                onclick="addOranges()"
+              >
+                Add To Cart
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-dark"
+                id="removeOranges"
+                onclick="removeOranges()"
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>The total price of your purchase is:</div>
+
+      <div id="addedToCart"></div>
+
+      <div>Thank you.</div>
+
+      <footer class="footer mt-auto py-3 bg-light fixed-bottom">
+        <div class="container2">
+          <span class="text-dark">Daria Pavlichev © 2022.</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
